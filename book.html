@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>book</title>
+  <link rel="stylesheet" href="book.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <h1 class="name">PRANAVI</h1>
+    <div class="navbar-links">
+      <p class="navbar-link"><a href="index.html">Back to home</a></p>
+    </div>
+
+  </nav>
+  <!--  -->
+  <!--forms  -->
+  <div class="boxx">
+    <section class="contact-section">
+      <div class="contact-intro">
+        <h2 class="contact-title">Appointment</h2>
+        <p class="contact-description">
+          Fill out the form below and we'll get back to you as soon as possible.
+        </p>
+
+      </div>
+
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="cfe7b417-244c-4367-a792-db30552a379d" />
+        <input type="hidden" name="subject" value="new appointment received " />
+        <input type="hidden" name="from_name" value="PRANAVI dental care" />
+        <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+
+        <div class="form-group-container">
+          <div class="form-group">
+            <label for="name" class="form-label">Name:</label>
+            <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email:</label>
+            <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+          </div>
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone:</label>
+            <input id="phone" name="phone" class="form-input" placeholder="+91 92345 67890" type="text" />
+          </div>
+          </div>
+          <div class="form-group">
+            <label for="date" class="form-label">date:</label>
+            <input id="date" name="date" class="form-input" placeholder="date" type="date" />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">describe your current dental problem:</label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Enter your problem"></textarea>
+          </div>
+          <div class="buttonbox">
+          <button class="form-submit" type="submit">Send Message</button>
+          <button class="resetbox" type="reset">Reset</button>
+        </div>
+        </div>
+        
+
+      </form>
+  </div>
+  </section>
+  <script src="pranavi.js">
+  </script>
+</body>
+
+</html>

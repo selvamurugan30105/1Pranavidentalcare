@@ -1,0 +1,152 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+background-color: rgb(255, 255, 255);
+font-family: 'poppins',sans-serif;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color:rgb(13, 110, 253);
+    color: antiquewhite;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: aliceblue;
+    border: 3px solid rgb(13, 110, 253);
+    
+}
+.navbar-links a:hover{
+    cursor: pointer;
+    color: rgb(40, 45, 50);
+    background-color: aliceblue;
+    border:3px solid white;
+    border-radius: 50%;
+    transition: 1s;
+}
+.navbar-menu-toggle{
+    display: none;
+}
+
+
+/* forms */
+.boxx{
+  margin: 10%;
+  background-color:rgb(13, 110, 253);
+  color: #fff;
+  border-radius: 20px;
+  height: vh100;
+}
+.contact-section {  
+  width: 100%;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 1rem;
+}
+
+.contact-intro > * + * {
+  margin-top: 1rem;
+}
+
+.contact-title {
+  display: block;
+  color: #fff;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700; 
+}
+
+.contact-description {
+  margin-right: 20px;
+  color: rgb(164, 194, 255);
+
+}
+
+.form-group-container {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.form-group {
+  display: flex;
+  flex-direction:column;
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-textarea {
+  padding: 5px;
+  padding-right: 2px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  height: 2.5rem;
+  width: 90%;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem; 
+ 
+}
+
+.form-input::placeholder,
+.form-textarea:focus-visible {
+  color: #6b7280;
+}
+
+.form-input:focus-visible,
+.form-textarea:focus-visible {
+  outline: 2px solid  rgb(255, 255, 255);
+  outline-offset: 2px;
+}
+
+.form-textarea {
+  min-height: 120px;
+}
+
+.form-submit {
+
+  width: 40%;
+  margin-top: 1.2rem;
+  background-color: #0fbf4d;
+  color: #fff;
+  padding: 13px 5px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  display: inline;
+  }
+
+.resetbox{
+  width: 40%;
+  margin-top: 1.2rem;
+  background-color: rgb(13, 110, 253);
+  color: #fff;
+  padding: 13px 5px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.buttonbox{
+display: flex;
+justify-content: space-between;
+padding-right: 50px;
+}
+
+@media screen and (max-width:700px){
+
+.navbar-menu-toggle{
+    display: block;}
+/* .navbar-links{ 
+  display: none;} */
+  .buttonbox{
+  flex-direction: column;
+
+}}
